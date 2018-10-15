@@ -1,3 +1,45 @@
 page-home {
+    ion-content{
+        background-color: #6a8460;
+    }
+    .b_pisc{
+        height: 34%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../assets/imgs/videocompetition.jpg);
+
+         border: 1px solid white;
+
+        button{
+            margin: 25% 0 0 40%;
+        }
+    }
+
+    .b_video{
+        height: 34%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../assets/imgs/cine-carteles.jpg);
+
+         border: 1px solid white;
+
+        button{
+            //text-align: center;
+            margin: 25% 0 0 40%;
+        }
+    }
+
+    .b_audio{
+        height: 34%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../assets/imgs/340x211.jpg);
+
+         border: 1px solid white;
+
+        button{
+            margin: 25% 0 0 40%;
+        }
+    }
 
 }

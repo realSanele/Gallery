@@ -1,0 +1,33 @@
+<!--
+  Generated template for the VideosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>videos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+      <ion-item col-6 *ngFor = "let url of videos">
+        <video controls>
+          <source src="{{url.downloadURL}}" type="video/3gp">
+          <source src="{{url.downloadURL}}" type="video/ogg">
+          <source src="{{url.downloadURL}}" type="video/mp4">
+        </video>
+      </ion-item>
+    </ion-list>
+
+    <ion-fab right bottom class="web-fab">
+      <button ion-fab  color="primary" (click)="uploads('video')">
+        <ion-icon name="ios-videocam-outline"></ion-icon>
+      </button>
+    </ion-fab>
+
+</ion-content>

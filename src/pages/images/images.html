@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ImagesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Images</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 *ngFor = "let image of images">
+        <img src="{{image.downloadURL}}">
+      </ion-col>
+      <!--<ion-col col-6 >
+          <img src="{{image.downloadURL}}">
+      </ion-col>-->
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab right bottom class="web-fab">
+    <button ion-fab  color="primary" (click)="uploads('camera')">
+      <ion-icon name="ios-camera"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

@@ -45,5 +45,21 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <!--Firebase-->
+  
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCX6K-pAW2DxocLm4VouWusJfTKZotA_OA",
+    authDomain: "shoppinglist-820b6.firebaseapp.com",
+    databaseURL: "https://shoppinglist-820b6.firebaseio.com",
+    projectId: "shoppinglist-820b6",
+    storageBucket: "shoppinglist-820b6.appspot.com",
+    messagingSenderId: "295416800791"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </body>
 </html>
